@@ -7,4 +7,6 @@
     <string name="user_name">User</string>
     <string name="user_password">Password</string>
     <string name="login_status_error">User or Password Error</string>
+    <string name="action_search">Search</string>
+    <string name="action_settings">Setting</string>
 </resources>
