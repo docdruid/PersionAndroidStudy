@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyApplication</string>
+    <string name="BHS_WH">BHS Warehouse</string>
+    <string name="login_wait"></string>
+    <string name="login">Login</string>
+    <string name="user_name">User</string>
+    <string name="user_password">Password</string>
+    <string name="login_status_error">User or Password Error</string>
+</resources>

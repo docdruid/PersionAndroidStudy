@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bhs_corrugated.dgan.myapplication.MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:layout_height="0dp" >
+
+            <TextView
+                android:text="@string/BHS_WH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/warehouse"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:elevation="1dp"
+                android:textSize="15pt" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="0dp" >
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:hint="@string/user_name"
+                android:id="@+id/userEditText"
+                android:layout_height="wrap_content"
+                android:textColorLink="@android:color/holo_blue_bright" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="0dp" >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/pwdEditText"
+                android:hint="@string/user_password"
+                android:password="true"
+                android:textColorLink="@android:color/holo_blue_bright" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_weight="0.7"
+            android:layout_height="0dp">
+
+            <TextView
+                android:text="@string/login_wait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/loginStatus"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_weight="1.3"
+            android:layout_height="0dp" >
+
+            <Button
+                android:text="@string/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button"
+                android:onClick="loginButtionClick"
+                android:textColorLink="@android:color/holo_blue_bright" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
